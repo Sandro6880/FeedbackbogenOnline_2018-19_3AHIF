@@ -6,7 +6,7 @@
 Rückfrage seiner Schüler bekommt.   
     -Die Schüler wollen unser Programm verwenden, damit sie das Feedback
 schnell abgeben können.
-    -Der Lehrer will unser Programm verwenden, damit er keine Zettel von den 
+                -Der Lehrer will unser Programm verwenden, damit er keine Zettel von den 
 Fragebögen für die Schüler ausdrucken muss.
 
 
