@@ -3,10 +3,10 @@
 ## User Stories
 
 -Der Lehrer will unser Programm verwenden, damit er eine ordentliche und schnelle
-Rückfrage seiner Schüler bekommt.\n
--Die Schüler wollen unser Programm verwenden, damit sie das Feedback
-schnell abgeben können.\n
--Der Lehrer will unser Programm verwenden, damit er keine Zettel von den 
+Rückfrage seiner Schüler bekommt.   
+    -Die Schüler wollen unser Programm verwenden, damit sie das Feedback
+schnell abgeben können.
+    -Der Lehrer will unser Programm verwenden, damit er keine Zettel von den 
 Fragebögen für die Schüler ausdrucken muss.
 
 
