@@ -27,37 +27,17 @@ für Fragebögen zu machen. Der Fragebogen dient zur Bewertung der Fachkräfte.
 
 ### Ist-Zustand
 
-Die Websites werden in HTML geschrieben und durch Java-Skript verwaltet.
-Mittels einer PHP Datenbank werden wir die generierten Codes dort speichern
-und am Ende der Befragung der Fachkraft schicken.
+Fragebögen werden in der HTL-Leonding von den Lehrern an die Schüler ausgegeben,
+damit sie ein Feedback von den Schüler bekommen.
+
+### Problem
+
+Die Schüler verlieren eine wertvolle Zeit während des Ausfüllens des Fragebogens.
+Die Lehrer brauchen eine lange Zeit bis sie alle Feedbackbögen durchgeschaut haben.
 
 ### Zielsetzung
 
-Das Ziel unseres Projektes ist, dass wir eine schnelle und leichte Befragung
-ermöglichen. 
-Die Lehrer werden ein schnelles und verständliches Feedback über ihre E-Mail 
-bekommen.
-
-### Anforderungen
-
-Das System soll leicht zu bedienen sein und ermöglicht schnelle Reaktionszeiten.
-Datenbank wird mittels PHP bedient. 
-
-### Mengengerüst 
-
-Verarbeitung der Fragebögen findet entweder nach dem Beendigen der Benutzer
-oder nach dem Zeitablauf statt. Dort wird das Ergebnis verwaltet und dem
-Auftraggeber geschickt.
-
-### Aufbau und Inhalte der Offerte
-
-Jeder registrierte Nutzer kann einen Fragebogen anfordern wo er dann die
-angegebene Anzahl von Codes bekommen wird. Die Schüler sind in der Lage
-schnell die Fragen zu beantworten.
-
-### Administratives 
-
-Budgetrahmen liegt in der Selbstfinanzierung der Projektmitglieder.
-Das Projekt soll bis zum 30.Juni.2019 fertig gestellt sein.
-
+Das Ziel unseres Projektes ist, dass wir eine schnelle Befragung ermöglichen.
+Die Lehrer werden ein verständliches Feedback über ihre E-Mail bekommen.
+Die Ausgabe soll anonym sein.
 
