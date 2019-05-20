@@ -7,6 +7,7 @@ dient dazu, dass den Lehrern eine leichtere Alternative gegenüber
 den gedruckten Fragebögen angeboten wird. Das Programm wird in der
 Lage sein von jeder Person verwendet zu werden. Die Mindestanzahl
 der zu generierenden Codes für den Feedbackbogen sind 10 Schüler.
+Außerdem werden die gesammelten Daten nur an den Lehrer geschickt.
 
 ## User Stories
 
