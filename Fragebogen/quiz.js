@@ -12,20 +12,12 @@ function tabulateAnswers() {
         x++;
         var c = "c" + x;
         if (answerOfUser[i].value == c) {
-          answers += x + ",";
+           localStorage.setItem(offset, x);
+           offset++;
           done = true;
         }
       }
      }
    }
-   answers += "0";
-   var i = 0;
-   var saved = false;
-   while (!saved) {
-     if (localStorage.getItem(i) === null) {
-       localStorage.setItem(i, answers);
-       saved = true;
-     }
-     i++;
-   }
+
 }
