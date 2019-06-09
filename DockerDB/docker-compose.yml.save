@@ -1,0 +1,41 @@
+version: '2'
+
+services: 
+  mariadb:
+    image: mariadb:10.4.5
+    container_name: mariadb
+    environment: 
+      MYSQL_ROOT_PASSWORD: passme
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: passme
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
+      
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mariadb:db
+    ports:
+      - 8000:80
+    environment:
+      MYSQL_ROOT_PASSWORD: passme
+  website:
+    image: nginx
+    volumes:
+      - .
+    ports:
+      - 8001:80
+          image: tutum/nginx
+    ports:
+        - "80:80"
+    links:
+        - phpfpm
+    volumes:
+        - ./nginx/default:/etc/nginx/sites-available/default
+        - ./nginx/default:/etc/nginx/sites-enabled/default
+
+        - ./logs/nginx-error.log:/var/log/nginx/error.log
+- ./logs/nginx-access.log:/var/log/nginx/access.log
