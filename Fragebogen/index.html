@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Schüler Fragebogen</title>
+                <script src="quiz.js"></script>
+                <link rel="stylesheet" type="text/css" href="style.css">
+                <meta charset="utf-8"/>
+        </head>
+        <body>
+          <div id="wrapper">
+            <h1>Wie zufrieden bist du mit mir?</h1>
+            <br></br>
+            <h4>Liebe Schülerin, lieber Schüler!</h4>
+            <p>
+              Dieser Fragebogen gibt dir die Möglichkeit, mir eine ganz persönliche Rückmeldung(ein Feedback) über
+              deine Zufriedenheit oder Unzufriedenheit im verschiedenen Bereichen des Unterrichts zu geben.
+              Die Befragung gibt mir wiederum eine wichtige Chance, die Meinung aller Schüler/innen über mich zu erfahren.
+              Deine Antworten sind anonym,das heißt, ich weiß nicht,von welchem Schüler ein bestimmter Fragebogen
+              stammt.Versucher gerecht zu urteilen und antworte selbstständig - lass dich nicht von anderen beeinflussen.
+              <br></br>
+              Herzlichen Dank für dein Feedback.
+            </p>
+
+
+            <form id="quiz" action="questioninfo.php" method="post">
+              <label>Klasse : <input type="text" name="class"><br /></label>
+              <label>Fach, in dem Feedback gegeben wird :<input type="text" name="class"><br /></label>
+              <!-- Question 1 -->
+              <h2>HINWEISE ZUM BEANTWORTEN DER FRAGEN</h2>
+              <h3>Eigenschaften</h3>
+              <p>
+                Im ersten Teil des Fragebogens sollst du verschiedene Eigenschaften von mir einschätzen. Das geschieht
+                dadurch, dass du die jeweiligen Punkte anklickst, ob die aufgezählten Eigenschaften auf mich zutreffen oder nicht.
+              <br /></p>
+              <p><b>Ein Beispiel:   Der Lehrer ist ... (geduldig)</b></p>
+              <label>
+               Diese Eigenschaft triff auf meinen Lehrer ...<br />
+                <input type="radio" checked> völlig zu</input>
+                <input type="radio"> eher zu</input>
+                <input type="radio"> eher nicht zu</input>
+                <input type="radio"> überhaupt nicht zu</input>
+                <br />
+                <p>
+                  In diesem Beispiel hat der Schüler den ganz linken Kreis angekreuzt, was bedeutet,
+                  dass er den Lehrer immer als geduldig erlebt hat.
+                </p>
+              </label>
+              <br>
+              <h3>Der Lehrer im Unterricht</h3>
+              <p>
+                Im zweiten Teil des Bogens wirst du gefragt, ob verschiedene Beschreibungen meines Unterrichts stimmen
+                oder nicht. Bitte lies jede Beschreibung sorgfältig durch und kreuze dann eine der vier Punkte von
+                "völlig richtig bis "völlig falsch an"
+              <br /></p>
+              <p><b> Ein Beispiel:   Der Lehrer kontrolliert die Hausübungen regelmäßig</b></p>
+              <label>
+               Diese Beschreibung ist ...<br />
+                <input type="radio"> völlig richtig</input>
+                <input type="radio"> eher richtig</input>
+                <input type="radio" checked> eher nicht richtig</input>
+                <input type="radio"> völlig falsch</input>
+                <br />
+                <p>
+                  In diesem Beispiel hat die Schülerin "eher falsch" angekreuzt, weil der Lehrer die Hausübungen
+                  eher selten kontrolliert.
+                </p>
+              </label>
+              <h3>Was gefällt Dir - was stört dich?</h3>
+              <p>
+                Wenn du möchtest, kannst du im dritten Teil des Bogens genauer angeben, was die an mir und meinem
+                Unterricht gefällt oder was dich besonders daran stört
+              <br /></p>
+              <p><b>
+                Kreuze an, ob deiner meinung nach die nachfolgenden<br />
+                Eigenschaften auf deinen Lehrer zutreffen oder nicht.
+              </b></p>
+              <br>
+              <label><b>Der Lehrer ist ... </b><br /></label>
+              <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+              <!-- The value is which answer the choice corresponds to. -->
+              <label>
+               <b>a)</b> fair - gerecht<br />
+               <input type="radio" name="q1" value="c1"> Trifft völlig zu
+               <input type="radio" name="q1" value="c2"> Trifft eher zu
+               <input type="radio" name="q1" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q1" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>b)</b> humorvoll - fröhlich<br />
+               <input type="radio" name="q2" value="c1"> Trifft völlig zu
+               <input type="radio" name="q2" value="c2"> Trifft eher zu
+               <input type="radio" name="q2" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q2" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>c)</b> hilfsbereit - unterstützend<br />
+               <input type="radio" name="q3" value="c1"> Trifft völlig zu
+               <input type="radio" name="q3" value="c2"> Trifft eher zu
+               <input type="radio" name="q3" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q3" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>d)</b> freundlich<br />
+               <input type="radio" name="q4" value="c1"> Trifft völlig zu
+               <input type="radio" name="q4" value="c2"> Trifft eher zu
+               <input type="radio" name="q4" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q4" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>e)</b> engagiert - aktiv<br />
+               <input type="radio" name="q5" value="c1"> Trifft völlig zu
+               <input type="radio" name="q5" value="c2"> Trifft eher zu
+               <input type="radio" name="q5" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q5" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>f)</b> verständnisvoll - rücksichtsvoll<br />
+               <input type="radio" name="q6" value="c1"> Trifft völlig zu
+               <input type="radio" name="q6" value="c2"> Trifft eher zu
+               <input type="radio" name="q6" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q6" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>g)</b> ehrlich - aufrichtig<br />
+               <input type="radio" name="q7" value="c1"> Trifft völlig zu
+               <input type="radio" name="q7" value="c2"> Trifft eher zu
+               <input type="radio" name="q7" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q7" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>h)</b> kooperativ - kontaktfreudig<br />
+               <input type="radio" name="q8" value="c1"> Trifft völlig zu
+               <input type="radio" name="q8" value="c2"> Trifft eher zu
+               <input type="radio" name="q8" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q8" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <b>i)</b> tolerant - lässt kritik zu<br />
+               <input type="radio" name="q9" value="c1"> Trifft völlig zu
+               <input type="radio" name="q9" value="c2"> Trifft eher zu
+               <input type="radio" name="q9" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q9" value="c4"> Trifft nicht zu
+             </label><br /><br>
+              <label><b>Der Unterricht des Lehrers</b><br /></label>
+              <em>
+                Achte besonders auf deine Antworten bei den schräg gedruckten<br />
+                 Fragen 2,5,8, usw: - sie sind negativ formuliert.
+              </em>
+              <label>
+               <p><b>1.)</b>Er kann auch schwierige Fragen beantworten, weil er sich in seinem Fachgebiet gut auskennt.</p>
+               <input type="radio" name="q10" value="c1"> Trifft völlig zu
+               <input type="radio" name="q10" value="c2"> Trifft eher zu
+               <input type="radio" name="q10" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q10" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><em><b>2.)</b>
+                 Für eine gute Note ist es am wichtigsten, wie sympathisch man dem
+                 Lehrer ist -  die Leistung ist Nebensache.
+               </em></p>
+               <input type="radio" name="q11" value="c1"> Trifft völlig zu
+               <input type="radio" name="q11" value="c2"> Trifft eher zu
+               <input type="radio" name="q11" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q11" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>3.)</b>
+                 Ich denke, dieser Lehrer kennt mich persönlich schon sehr gut,
+                 sowohl in meinen Stärken wie in meinen Schwächen.
+               </p>
+               <input type="radio" name="q12" value="c1"> Trifft völlig zu
+               <input type="radio" name="q12" value="c2"> Trifft eher zu
+               <input type="radio" name="q12" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q12" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>4.)</b>
+                 Er bemüht sich, uns der Leistung und dem Benehmen entstprechend
+                 zu loben oder zu ermahnen und niemanden zu bevorzugen.
+               </p>
+               <input type="radio" name="q13" value="c1"> Trifft völlig zu
+               <input type="radio" name="q13" value="c2"> Trifft eher zu
+               <input type="radio" name="q13" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q13" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><em><b>5.)</b>
+                 Bei diesem Lehrer ist mir oft nicht klar; worauf es bei seinen
+                 Prüfungen ankommt oder wie meine Noten zustandekommen.
+               </em></p>
+               <input type="radio" name="q14" value="c1"> Trifft völlig zu
+               <input type="radio" name="q14" value="c2"> Trifft eher zu
+               <input type="radio" name="q14" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q14" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>6.)</b>
+                 Ich glaube, dass ich durch seinen Unterricht schon viel Neues
+                 gelernt habe.
+               </p>
+               <input type="radio" name="q15" value="c1"> Trifft völlig zu
+               <input type="radio" name="q15" value="c2"> Trifft eher zu
+               <input type="radio" name="q15" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q15" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>7.)</b>
+                 Sein Unterricht ist interessant und attraktiv, weil er sich um
+                 Abwechslung und Praxisnähe bemüht.
+               </p>
+               <input type="radio" name="q16" value="c1"> Trifft völlig zu
+               <input type="radio" name="q16" value="c2"> Trifft eher zu
+               <input type="radio" name="q16" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q16" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><em><b>8.)</b>
+                 Er verlangt häufig zuviel von uns, und deswegen fühle ich mich beim
+                 Lernen oft überfordert und gestresst.
+               </em></p>
+               <input type="radio" name="q17" value="c1"> Trifft völlig zu
+               <input type="radio" name="q17" value="c2"> Trifft eher zu
+               <input type="radio" name="q17" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q17" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>9.)</b>
+                 Der Lehrer erklärt im Unterricht so verständlich und klar, dass ich
+                 alles Wichtige gut verstehe und begreife.
+               </p>
+               <input type="radio" name="q18" value="c1"> Trifft völlig zu
+               <input type="radio" name="q18" value="c2"> Trifft eher zu
+               <input type="radio" name="q18" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q18" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><em><b>10.)</b>
+                 Wenn ich einen Fehler mache oder mich schlecht benehme, werde
+                 ich von diesem Lehrer vor der ganzen Klasse beschimpft oder
+                 lächerlich gemacht
+               </em></p>
+               <input type="radio" name="q19" value="c1"> Trifft völlig zu
+               <input type="radio" name="q19" value="c2"> Trifft eher zu
+               <input type="radio" name="q19" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q19" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>11.)</b>
+                 Ich freue mich, wenn dieser Lehrer zumm Unterricht in unsere
+                 Klasse kommt.
+               </p>
+               <input type="radio" name="q20" value="c1"> Trifft völlig zu
+               <input type="radio" name="q20" value="c2"> Trifft eher zu
+               <input type="radio" name="q20" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q20" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>12.)</b>
+                 Er erklärt uns oft, wie der Lehrstoff mit anderen Fächern oder mit
+                 praktischen Problemen zusammenhängt.
+               </p>
+               <input type="radio" name="q21" value="c1"> Trifft völlig zu
+               <input type="radio" name="q21" value="c2"> Trifft eher zu
+               <input type="radio" name="q21" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q21" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>13.)</b>
+                 Wenn ich bei ihm etwas richtig oder gut gemacht habe, so werde
+                 ich dafür auch entsprechend gelobt.
+               </p>
+               <input type="radio" name="q22" value="c1"> Trifft völlig zu
+               <input type="radio" name="q22" value="c2"> Trifft eher zu
+               <input type="radio" name="q22" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q22" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>14.)</b>
+                 Bevor er Hausübungen oder etwas zu lernen aufgibt, erkundigt er
+                 sich, ob wir schon andere Hausübungen erhalten haben oder Prü-
+                 fungen bevorstehen
+               </p>
+               <input type="radio" name="q23" value="c1"> Trifft völlig zu
+               <input type="radio" name="q23" value="c2"> Trifft eher zu
+               <input type="radio" name="q23" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q23" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>15.)</b>
+                 Er freut sich, wenn es ihm gelungen ist, uns etwas Neues oder
+                 Schwieriges beizubringen.
+               </p>
+               <input type="radio" name="q24" value="c1"> Trifft völlig zu
+               <input type="radio" name="q24" value="c2"> Trifft eher zu
+               <input type="radio" name="q24" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q24" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>16.)</b><em>
+                 Dieser Lehrer schafft es oft nicht, die zum Arbeiten nötige Ruhe und
+                 Ordnung in unserer Klasse herzustellen
+               </em></p>
+               <input type="radio" name="q25" value="c1"> Trifft völlig zu
+               <input type="radio" name="q25" value="c2"> Trifft eher zu
+               <input type="radio" name="q25" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q25" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>17.)</b>
+                 Wenn ich Schwierigkeiten beim Lernen habe, kann ich auf die Hilfe
+                 und das Verständnis des Lehrers zählen
+               </p>
+               <input type="radio" name="q26" value="c1"> Trifft völlig zu
+               <input type="radio" name="q26" value="c2"> Trifft eher zu
+               <input type="radio" name="q26" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q26" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>18.)</b>
+                 Er bemüht sich sehr, uns in seinem Fach auch aktuelle, moderne
+                 und lebensnahe Informationen und Beispiele zu geben.
+               </p>
+               <input type="radio" name="q27" value="c1"> Trifft völlig zu
+               <input type="radio" name="q27" value="c2"> Trifft eher zu
+               <input type="radio" name="q27" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q27" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>19.)</b><em>
+                 Wenn ich einen guten Einfall habe und etwas sagen will, dann be-
+                 achtet mich der Lehrer oft gar nicht.
+               </em></p>
+               <input type="radio" name="q28" value="c1"> Trifft völlig zu
+               <input type="radio" name="q28" value="c2"> Trifft eher zu
+               <input type="radio" name="q28" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q28" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>20.)</b>
+                 Durch sein Engagement und seinen Einsatz gelingt es dem Lehrer,
+                 uns für sein Fach besonders zu interessieren und zu aktivieren.
+               </p>
+               <input type="radio" name="q29" value="c1"> Trifft völlig zu
+               <input type="radio" name="q29" value="c2"> Trifft eher zu
+               <input type="radio" name="q29" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q29" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>21.)</b>
+                 Der Lehrer achtet darauf, dass wir Schüler im Unterricht auch unsere
+                 eigenen Ideen verwirklichen können.
+               </p>
+               <input type="radio" name="q30" value="c1"> Trifft völlig zu
+               <input type="radio" name="q30" value="c2"> Trifft eher zu
+               <input type="radio" name="q30" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q30" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>22.)</b>
+                 Wenn mich bei diesem Lehrer etwas stört, so kann ich das offen
+                 sagen, ohne dass ich Nachteile befürchten muss.
+               </p>
+               <input type="radio" name="q31" value="c1"> Trifft völlig zu
+               <input type="radio" name="q31" value="c2"> Trifft eher zu
+               <input type="radio" name="q31" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q31" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>23.)</b><em>
+                 Dieser Lehrer beschäftigt sich hauptsächlich mit den guten
+                 Schüler/innen in der Klasse.
+               </em></p>
+               <input type="radio" name="q32" value="c1"> Trifft völlig zu
+               <input type="radio" name="q32" value="c2"> Trifft eher zu
+               <input type="radio" name="q32" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q32" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>24.)</b>
+                 Wenn er Hausübungen gibt, dann kann ich diese normalerweise
+                 selbständig und ohne Hilfe anderer Personen bewältigen
+               </p>
+               <input type="radio" name="q33" value="c1"> Trifft völlig zu
+               <input type="radio" name="q33" value="c2"> Trifft eher zu
+               <input type="radio" name="q33" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q33" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>25.)</b>
+                 Wenn ich etwas falsch mache - zum Beispiel bei der Hausübung -,
+                 dann erklärt er mir genau, wie man es richtig macht
+               </p>
+               <input type="radio" name="q34" value="c1"> Trifft völlig zu
+               <input type="radio" name="q34" value="c2"> Trifft eher zu
+               <input type="radio" name="q34" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q34" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>26)</b>
+                 Er bringt mir in diesem Fach etwas bei, was für mich im späteren
+                 Leben oder im Beruf wichtig sein wird.
+               </p>
+               <input type="radio" name="q35" value="c1"> Trifft völlig zu
+               <input type="radio" name="q35" value="c2"> Trifft eher zu
+               <input type="radio" name="q35" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q35" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>27.)</b><em>
+                 Durch die hohen Lernanforderungen des Lehrers habe ich oft große
+                 Angst, bei seinen Prüfungen zu versagen
+               </em></p>
+               <input type="radio" name="q36" value="c1"> Trifft völlig zu
+               <input type="radio" name="q36" value="c2"> Trifft eher zu
+               <input type="radio" name="q36" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q36" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>28.)</b>
+                 Die Noten, die ich bei diesem Lehrer bekomme, entsprechen meinen
+                 tatsächlichen Leistungen.
+               </p>
+               <input type="radio" name="q37" value="c1"> Trifft völlig zu
+               <input type="radio" name="q37" value="c2"> Trifft eher zu
+               <input type="radio" name="q37" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q37" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>29)</b>
+                 Ich würde mir wünschen, dass mich dieser Lehrer auch im nächsten
+                 Jahr wieder unterrichtet.
+               </p>
+               <input type="radio" name="q38" value="c1"> Trifft völlig zu
+               <input type="radio" name="q38" value="c2"> Trifft eher zu
+               <input type="radio" name="q38" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q38" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>30.)</b>
+                 Dieser Lehrer ist mir sympathisch.
+               </p>
+               <input type="radio" name="q39" value="c1"> Trifft völlig zu
+               <input type="radio" name="q39" value="c2"> Trifft eher zu
+               <input type="radio" name="q39" value="c3"> Trifft eher nicht zu
+               <input type="radio" name="q39" value="c4"> Trifft nicht zu
+              </label><br />
+              <label>
+               <p><b>31. Wie zufrieden bist du mit deinem LEHRER insgesamt</b></p>
+               sehr zufrieden<input type="radio" name="q40" value="c1" style='font-size:25px'>&#128578;
+               <input type="radio" name="q40" value="c2" style='font-size:25px;'>&#128528;
+               <input type="radio" name="q40" value="c3" style='font-size:25px;'>&#128529;
+               <input type="radio" name="q40" value="c4" style='font-size:25px;'>&#128577; sehr unzufrieden
+              </label><br />
+              <h3>
+                Wenn du möchtest, kannst du hier genauer angeben, was die an deinem Lehrer<br />
+                oder seinem Unterricht gefällt oder was dich besonders stört.
+              </h3>
+              <p>an diesem Lehrer gefällt mir,</p>
+              <textarea name="textarea1" rows="8" cols="50">
+
+              </textarea>
+              <p>an diesem Lehrer stört mich,</p>
+              <textarea name="textarea2" rows="8" cols="50">
+              </textarea>
+              <p>
+                Bitte kontrolliere, ob du alle Fragen beantwortet hast.<br />
+                <b>Herzlichen Dank für deine Rückmeldung.</b>
+              </p>
+              <button id="sub" >Antworten absenden</button>
+            </form>
+            <span id="result"></span>
+          </div>
+        </body>
+</html>
