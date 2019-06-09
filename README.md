@@ -42,3 +42,22 @@ Das Ziel unseres Projektes ist, dass wir eine schnelle Befragung ermöglichen.
 Die Lehrer werden ein verständliches Feedback über ihre E-Mail bekommen.
 Die Ausgabe soll anonym sein.
 
+### Ausführung
+[Bild 1]: https://github.com/Sandro6880/FeedbackbogenOnline_2018-19_3AHIF/blob/master/ReadMeContainer/RunNGINX.png
+[Bild 2]: https://github.com/Sandro6880/FeedbackbogenOnline_2018-19_3AHIF/blob/master/ReadMeContainer/docker-compose.png
+[Bild 3]: https://github.com/Sandro6880/FeedbackbogenOnline_2018-19_3AHIF/blob/master/ReadMeContainer/localhost.png
+[Bild 4]: https://github.com/Sandro6880/FeedbackbogenOnline_2018-19_3AHIF/blob/master/ReadMeContainer/Screenshot from 2019-06-09 19-37-20.png
+![RunNGINX.png][Bild 1]
+
+--name  -> Hier den gewünschten Namen für den Docker service angeben
+nach -v -> Den Dateipfad von dem Fragebogen Ordner angeben. (Normal oder Weiblich)
+
+Im DockerDB Ordner docker-compose-up ausführen.
+![docker-compose.png][Bild 2]
+
+Jetzt ist die Datenbank und der Server Online, jetzt nur zum Localhost:Port gehen.
+
+![localhost.png][Bild 3]
+
+Den Port kann man mit docker ps finden.
+![Screenshot from 2019-06-09 19-37-20.png][Bild 4]
