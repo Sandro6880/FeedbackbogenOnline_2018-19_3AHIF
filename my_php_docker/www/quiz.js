@@ -3,31 +3,20 @@ var answers = "";
 function tabulateAnswers() {
   var choices = document.getElementsByTagName('question');
   var answerOfUser = document.getElementsByTagName('input');
-  window.location.href = "questioninfo.php?test=test";
-  var offset = 0;
-  for (i=0; i<answerOfUser.length; i++) {
-    if (answerOfUser[i].checked) {
-      var done = false
-      let x = 0;
-      while (!done) {
-        x++;
-        var c = "c" + x;
-        if (answerOfUser[i].value == c) {
-          answers += x + ",";
-          done = true;
-        }
-      }
-     }
-   }
-   answers += "0";
-   var i = 0;
-   var saved = false;
-   while (!saved) {
-     if (localStorage.getItem(i) === null) {
-       window.localStorage.setItem(i, answers);
-       saved = true;
-     }
-     i++;
-   }
 
-}
+  var offset = 0;
+  for (var i=0; i<choices.length; i++) {
+    var done = false;
+    for (var x = 0+offset; x < 4+offset; x++) {
+      if (answerOfUser[x].checked && !done) {
+        answers+=answerOfUser[x].value[1];
+        done = true;
+      }
+    }
+    offset+=4;
+    if (!done) {
+      answers+="0";
+    }
+  }
+   window.location.href = "questioninfo.php?answers=" + answers;
+   }
