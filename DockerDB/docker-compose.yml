@@ -2,13 +2,9 @@ version: '2'
 
 services:
     mariadb:
-        image: mariadb:10.4.5
-        container_name: mariadb
+        image: mariadb:10.3
         environment:
           MYSQL_ROOT_PASSWORD: passme
-          MYSQL_DATABASE: mydb
-          MYSQL_USER: user
-          MYSQL_PASSWORD: passme
         ports:
             - 3306:3306
         volumes:
@@ -26,7 +22,7 @@ services:
         networks:
             - code-network
     web:
-        image: nginx:latest
+        image: nginx:1.14.0-alpine
         ports:
             - 8080:80
         volumes:
@@ -37,7 +33,10 @@ services:
         networks:
             - code-network
     php:
-        image: php:7-fpm
+        build:
+            context: ./phpDockerfile/
+        ports:
+            - 9000:9000
         volumes:
             - ./Fragebogen:/Fragebogen
         networks:
